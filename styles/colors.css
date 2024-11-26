@@ -1,0 +1,50 @@
+.text-night-blue{
+    color: #5271FF;
+}
+
+.bg-night-blue{
+    background-color: #5271FF;
+}
+
+.text-sig-blue{
+    color: #004AAD;
+}
+
+.bg-sig-blue{
+    background-color: #004AAD;
+}
+
+/* Hover variations */
+.hover\:text-night-blue:hover {
+    color: #5271FF;
+}
+
+.hover\:bg-night-blue:hover {
+    background-color: #5271FF;
+}
+
+.hover\:text-sig-blue:hover {
+    color: #004AAD;
+}
+
+.hover\:bg-sig-blue:hover {
+    background-color: #004AAD;
+}
+
+/* Border variants */
+.border-night-blue {
+    border-color: #5271FF;
+}
+
+.border-sig-blue {
+    border-color: #004AAD;
+}
+
+/* Hover border variants */
+.hover\:border-night-blue:hover {
+    border-color: #5271FF;
+}
+
+.hover\:border-sig-blue:hover {
+    border-color: #004AAD;
+}
