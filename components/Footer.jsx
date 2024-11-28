@@ -11,7 +11,7 @@ export default function Footer() {
     const [facebook, setFacebook]=useState(false);
 
     return (
-        <footer className="bg-[#111] text-white pt-8 noto">
+        <footer className="bg-[#111] text-white pt-8 noto shadow-2xl">
             <div className="px-24 flex flex-row justify-between items-start">
                 {/* Left Section: Logo and Description */}
                 <div className="w-[55%] flex flex-col justify-center">

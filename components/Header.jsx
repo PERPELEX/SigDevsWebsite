@@ -88,7 +88,7 @@ export default function Header() {
 
                     {/* Login Button */}
                     <Link href="">
-                        <button className="hidden md:flex bg-night-blue hover:bg-sig-blue text-white px-4 py-2 rounded-lg transition-colors duration-300">
+                        <button className="hidden md:flex bg-sig-blue text-white font-semibold border-sig-blue border-2 hover:bg-[#111] hover:text-night-blue hover:border-night-blue px-4 py-2 rounded-xl transition-colors duration-300">
                             Contact Us
                         </button>
                     </Link>

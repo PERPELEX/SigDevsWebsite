@@ -2,16 +2,51 @@
     color: #5271FF;
 }
 
-.bg-night-blue{
-    background-color: #5271FF;
-}
-
 .text-sig-blue{
     color: #004AAD;
 }
 
+/* Graphite color */
+.text-graphite {
+    color: #171717;
+}
+
+.text-lead {
+    color: #201f1f;
+}
+
+.bg-night-blue{
+    background-color: #5271FF;
+}
+
 .bg-sig-blue{
     background-color: #004AAD;
+}
+
+/* Graphite color */
+.bg-graphite {
+    background-color: #171717;
+}
+
+.bg-lead {
+    background-color: #201f1f;
+}
+
+/* Border variants */
+.border-night-blue {
+    border-color: #5271FF;
+}
+
+.border-sig-blue {
+    border-color: #004AAD;
+}
+
+.border-graphite {
+    border-color: #171717;
+}
+
+.border-lead {
+    border-color: #201f1f;
 }
 
 /* Hover variations */
@@ -31,20 +66,30 @@
     background-color: #004AAD;
 }
 
-/* Border variants */
-.border-night-blue {
-    border-color: #5271FF;
+.hover\:text-graphite:hover {
+    color: #171717;
 }
 
-.border-sig-blue {
-    border-color: #004AAD;
+.hover\:bg-graphite:hover {
+    background-color: #171717;
 }
 
-/* Hover border variants */
+.hover\:text-lead:hover {
+    color: #201f1f;
+}
+
 .hover\:border-night-blue:hover {
     border-color: #5271FF;
 }
 
 .hover\:border-sig-blue:hover {
     border-color: #004AAD;
+}
+
+.hover\:border-graphite:hover {
+    border-color: #171717;
+}
+
+.hover\:border-lead:hover {
+    border-color: #201f1f;
 }
