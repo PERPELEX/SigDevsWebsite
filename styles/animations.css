@@ -10,3 +10,61 @@
 .animate-move-right {
   animation: move-right 0.5s ease-in-out;
 }
+
+@keyframes colorChange {
+  0% {
+    fill: #FFFFFF; /* Start with white */
+  }
+  6.25% {
+    fill: #E8F0FF; /* Very light blue */
+  }
+  12.5% {
+    fill: #D0E1FF;
+  }
+  18.75% {
+    fill: #B8D2FF;
+  }
+  25% {
+    fill: #A0C3FF;
+  }
+  31.25% {
+    fill: #88B4FF;
+  }
+  37.5% {
+    fill: #70A5FF;
+  }
+  43.75% {
+    fill: #5896FF;
+  }
+  50% {
+    fill: #5271FF; /* Midpoint, strong blue */
+  }
+  56.25% {
+    fill: #5896FF; /* Gradual shift back */
+  }
+  62.5% {
+    fill: #70A5FF;
+  }
+  68.75% {
+    fill: #88B4FF;
+  }
+  75% {
+    fill: #A0C3FF;
+  }
+  81.25% {
+    fill: #B8D2FF;
+  }
+  87.5% {
+    fill: #D0E1FF;
+  }
+  93.75% {
+    fill: #E8F0FF;
+  }
+  100% {
+    fill: #FFFFFF; /* Back to white */
+  }
+}
+
+.ico {
+  animation: colorChange 10s infinite;
+}

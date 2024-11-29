@@ -27,7 +27,7 @@ export default function Header() {
         setIsToggled(!isToggled);
     };
 
-    const items1 = ['Option 1', 'Option 2', 'Option 3'];
+    const items1 = ['Website Development', 'AI Model & Sloutions', 'App Development', 'Data Science Solutions'];
     const items2 = ['Home', 'About Us', 'Services', 'Contact Us'];
     const list1 = items1.map((item, index, url) => {
         return <ListItem key={index} itemName={item} url={url} />;
@@ -111,7 +111,7 @@ export default function Header() {
                 </nav>
             </div>
 
-            <div className={`transition-all duration-300 ease-in-out ${isDropdownOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+            <div className={`transition-all duration-300 ease-in-out ${isDropdownOpen ? 'max-h-44 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                 <div className="mt-4 bg-[#222] p-4 rounded-xl">
                     <p className='text-xl mb-2'>Services</p>
                     {list1}

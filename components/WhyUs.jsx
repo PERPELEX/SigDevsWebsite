@@ -30,8 +30,8 @@ export default function WhyUs() {
         <div>
             <Heading text="Why Choose Us" className="text-white mb-24" />
             <div className="flex flex-row justify-between items-center gap-20">
-                {dataSets.map(data => {
-                    return <Reason icon={data.icon} name={data.name} text={data.text} />
+                {dataSets.map((data,index) => {
+                    return <Reason key={index} icon={data.icon} name={data.name} text={data.text} />
                 })}
             </div>
         </div>
