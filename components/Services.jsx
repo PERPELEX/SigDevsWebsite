@@ -35,7 +35,7 @@ const ServicesData = [
 
 export default function Services() {
     return (
-        <div className="w-[100%] h-auto bg-graphite ">
+        <div id="services" className="w-[100%] h-auto bg-graphite ">
             <Heading text="Our Services" className="text-white text-center mb-24" />
             <div className="flex flex-col  gap-32">
                 {ServicesData.map((serviceData, index) => (

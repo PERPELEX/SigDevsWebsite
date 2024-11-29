@@ -19,7 +19,7 @@ export default function Custom404() {
             />
             <button
                 onClick={handleGoBack}
-                className="mt-8 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-300"
+                className="text-lg font-medium px-4 py-2 border-2 bg-sig-blue border-sig-blue text-white rounded-lg hover:bg-black hover:text-night-blue hover:border-night-blue transition-all ease-in-out duration-200"
             >
                 Go Back
             </button>

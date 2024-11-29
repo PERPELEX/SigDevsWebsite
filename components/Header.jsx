@@ -27,21 +27,53 @@ export default function Header() {
         setIsToggled(!isToggled);
     };
 
-    const items1 = ['Website Development', 'AI Model & Sloutions', 'App Development', 'Data Science Solutions'];
-    const items2 = ['Home', 'About Us', 'Services', 'Contact Us'];
-    const list1 = items1.map((item, index, url) => {
-        return <ListItem key={index} itemName={item} url={url} />;
+    const items1 = [
+        {
+            name: 'Website Development',
+            url: "/Web"
+        },
+        {
+            name: 'AI Model & Sloutions',
+            url: "/AI"
+        },
+        {
+            name: 'App Development',
+            url: "/App"
+        },
+        {
+            name: 'Data Science & Solutions',
+            url: "/DSS"
+        },
+    ];
+
+    const items2 = [
+        {
+            name: 'Home',
+            url: "/"
+        },
+        {
+            name: 'About Us',
+            url: "/about"
+        },
+        {
+            name: 'Contact Us',
+            url: "/contact"
+        },
+    ];
+
+    const list1 = items1.map((item, index) => {
+        return <ListItem key={index} itemName={item.name} url={item.url} />;
     });
-    const list2 = items2.map((item, index, url) => {
-        return <ListItem key={index} itemName={item} url={url} />;
+    const list2 = items2.map((item, index) => {
+        return <ListItem key={index} itemName={item.name} url={item.url} />;
     });
 
     return (
-        <header className={`bg-[#111] text-white noto flex flex-col px-6 py-6 shadow-2xl z-50 transition-all duration-900 ease-in-out ${isDropdownOpen || isDropdownOpen2 ? 'max-h-[1000px]' : 'max-h-[90px]'}`}>
+        <header className={`bg-[#111] text-white noto flex flex-col px-20 py-6 shadow-2xl z-50 transition-all duration-900 ease-in-out ${isDropdownOpen || isDropdownOpen2 ? 'max-h-[1000px]' : 'max-h-[90px]'}`}>
             <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-4">
                     <div className="text-2xl font-bold flex flex-row items-start gap-x-8 ">
-                        <span
+                        {/* <span
                             className={`cursor-pointer hidden md:flex ${isIconClicked ? 'text-night-blue rotate-90' : 'text-white rotate-0'} hover:text-night-blue transition-all duration-300`}
                             onClick={toggleDropdown}
                         >
@@ -56,7 +88,7 @@ export default function Header() {
                                 <rect x="3" y="11" width="14" height="2" fill="currentColor" />
                                 <rect x="3" y="17" width="10" height="2" fill="currentColor" />
                             </svg>
-                        </span>
+                        </span> */}
                         <Image
                             src="/logo-dark.png"
                             width={150}
@@ -69,9 +101,9 @@ export default function Header() {
                 <nav className="flex items-center gap-x-16">
                     {/* Navigation Links */}
                     <span className='hidden md:flex items-center gap-x-16'>
-                        <Link href="#"><span className="hover:text-night-blue cursor-pointer transition-colors duration-300">Home</span></Link>
-                        <Link href="#"><span className="hover:text-night-blue cursor-pointer transition-colors duration-300">About Us</span></Link>
-                        <span onClick={toggleDropdown} className={`${isDropdownOpen?"text-night-blue":"text-white"} flex flex-row items-center  hover:text-night-blue cursor-pointer transition-colors duration-300`}>
+                        <Link href="/"><span className="hover:text-night-blue cursor-pointer transition-colors duration-300">Home</span></Link>
+                        <Link href="about"><span className="hover:text-night-blue cursor-pointer transition-colors duration-300">About Us</span></Link>
+                        <span onClick={toggleDropdown} className={`${isDropdownOpen ? "text-night-blue" : "text-white"} flex flex-row items-center  hover:text-night-blue cursor-pointer transition-colors duration-300`}>
                             <p>Services</p>
                             <svg
                                 className={`ml-2 transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`}
@@ -87,7 +119,7 @@ export default function Header() {
                     </span>
 
                     {/* Login Button */}
-                    <Link href="">
+                    <Link href="contact">
                         <button className="hidden md:flex bg-sig-blue text-white font-semibold border-sig-blue border-2 hover:bg-[#111] hover:text-night-blue hover:border-night-blue px-4 py-2 rounded-xl transition-colors duration-300">
                             Contact Us
                         </button>

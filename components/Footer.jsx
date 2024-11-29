@@ -80,22 +80,22 @@ export default function Footer() {
                     <h3 className="text-xl font-semibold">Quick Links</h3>
                     <ul className="flex flex-col justify-center gap-2 font-light">
                         <li>
-                            <Link href="">
+                            <Link href="/">
                                 <span className="hover:text-night-blue">Home</span>
                             </Link>
                         </li>
                         <li>
-                            <Link href="">
+                            <Link href="/about">
                                 <span className="hover:text-night-blue">About Us</span>
                             </Link>
                         </li>
                         <li>
-                            <Link href="">
+                            <Link href="/#services">
                                 <span className="hover:text-night-blue">Services</span>
                             </Link>
                         </li>
                         <li>
-                            <Link href="">
+                            <Link href="/contact">
                                 <span className="hover:text-night-blue">Contact Us</span>
                             </Link>
                         </li>
