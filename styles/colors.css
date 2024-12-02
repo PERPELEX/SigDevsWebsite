@@ -1,95 +1,169 @@
-.text-night-blue{
-    color: #5271FF;
+/* Text colors */
+.text-night-blue {
+  color: #5271ff;
 }
 
-.text-sig-blue{
-    color: #004AAD;
+.text-sig-blue {
+  color: #004aad;
 }
 
-/* Graphite color */
 .text-graphite {
-    color: #171717;
+  color: #171717;
 }
 
 .text-lead {
-    color: #201f1f;
+  color: #201f1f;
 }
 
-.bg-night-blue{
-    background-color: #5271FF;
+/* Background colors */
+.bg-night-blue {
+  background-color: #5271ff;
 }
 
-.bg-sig-blue{
-    background-color: #004AAD;
+.bg-sig-blue {
+  background-color: #004aad;
 }
 
-/* Graphite color */
 .bg-graphite {
-    background-color: #171717;
+  background-color: #171717;
 }
 
 .bg-lead {
-    background-color: #201f1f;
+  background-color: #201f1f;
 }
 
-/* Border variants */
+/* Border colors */
 .border-night-blue {
-    border-color: #5271FF;
+  border-color: #5271ff;
 }
 
 .border-sig-blue {
-    border-color: #004AAD;
+  border-color: #004aad;
 }
 
 .border-graphite {
-    border-color: #171717;
+  border-color: #171717;
 }
 
 .border-lead {
-    border-color: #201f1f;
+  border-color: #201f1f;
 }
 
-/* Hover variations */
+/* Hover variants */
 .hover\:text-night-blue:hover {
-    color: #5271FF;
+  color: #5271ff;
 }
 
 .hover\:bg-night-blue:hover {
-    background-color: #5271FF;
+  background-color: #5271ff;
 }
 
 .hover\:text-sig-blue:hover {
-    color: #004AAD;
+  color: #004aad;
 }
 
 .hover\:bg-sig-blue:hover {
-    background-color: #004AAD;
+  background-color: #004aad;
 }
 
 .hover\:text-graphite:hover {
-    color: #171717;
+  color: #171717;
 }
 
 .hover\:bg-graphite:hover {
-    background-color: #171717;
+  background-color: #171717;
 }
 
 .hover\:text-lead:hover {
-    color: #201f1f;
+  color: #201f1f;
+}
+
+.hover\:bg-lead:hover {
+  background-color: #201f1f;
 }
 
 .hover\:border-night-blue:hover {
-    border-color: #5271FF;
+  border-color: #5271ff;
 }
 
 .hover\:border-sig-blue:hover {
-    border-color: #004AAD;
+  border-color: #004aad;
 }
 
 .hover\:border-graphite:hover {
-    border-color: #171717;
+  border-color: #171717;
 }
 
 .hover\:border-lead:hover {
-    border-color: #201f1f;
+  border-color: #201f1f;
+}
+
+/* Focus variants */
+.focus\:text-night-blue:focus {
+  color: #5271ff;
+}
+
+.focus\:bg-night-blue:focus {
+  background-color: #5271ff;
+}
+
+.focus\:text-sig-blue:focus {
+  color: #004aad;
+}
+
+.focus\:bg-sig-blue:focus {
+  background-color: #004aad;
+}
+
+.focus\:text-graphite:focus {
+  color: #171717;
+}
+
+.focus\:bg-graphite:focus {
+  background-color: #171717;
+}
+
+.focus\:text-lead:focus {
+  color: #201f1f;
+}
+
+.focus\:bg-lead:focus {
+  background-color: #201f1f;
+}
+
+.focus\:border-night-blue:focus {
+  border-color: #5271ff;
+}
+
+.focus\:border-sig-blue:focus {
+  border-color: #004aad;
+}
+
+.focus\:border-graphite:focus {
+  border-color: #171717;
+}
+
+.focus\:border-lead:focus {
+  border-color: #201f1f;
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-heading-blue {
+  background: linear-gradient(90deg, #2193b0, #6dd5ed, #2193b0);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 5s ease infinite;
 }
