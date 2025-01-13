@@ -16,7 +16,6 @@ const ContactForm = ({ className }) => {
   const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
 
   // Log the environment variable to check if it's being accessed correctly
-  console.log("WEB3FORMS_ACCESS_KEY:", WEB3FORMS_ACCESS_KEY);
 
   const handleInputChange = (e) => {
     setFormData({
