@@ -15,6 +15,9 @@ const ContactForm = ({ className }) => {
   // Web3Forms API key - replace with your actual key
   const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
 
+  // Log the environment variable to check if it's being accessed correctly
+  console.log("WEB3FORMS_ACCESS_KEY:", WEB3FORMS_ACCESS_KEY);
+
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -26,6 +29,12 @@ const ContactForm = ({ className }) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitMessage("");
+
+    if (!WEB3FORMS_ACCESS_KEY) {
+      setSubmitMessage("Missing Web3Forms access key.");
+      setIsSubmitting(false);
+      return;
+    }
 
     // Prepare form data for Web3Forms
     const formDataForSubmission = new FormData();
