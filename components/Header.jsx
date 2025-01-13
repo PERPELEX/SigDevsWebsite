@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import ListItem from "./listItem";
+import ListItem from "@/components/ListItem";
 import { useRouter } from "next/router";
 
 export default function Header() {
