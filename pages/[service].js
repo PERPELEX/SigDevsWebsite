@@ -26,7 +26,7 @@ export default function ServiceDetails() {
           console.error("There was a problem with the fetch operation:", error);
         });
     }
-  }, [service]);
+  }, [router]);
 
   if (!serviceData) {
     return <div>Loading...</div>;

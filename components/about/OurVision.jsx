@@ -7,7 +7,7 @@ export default function OurVision() {
       <p className="w-[50%] text-xl font-light text-center">
         To empower businesses by harnessing the potential of technology,
         fostering innovation, and delivering unparalleled solutions that drive
-        success and add value to our clients&apos;innovation&apos; endeavors.
+        success and add value to our client&apos;s endeavors.
       </p>
     </div>
   );
