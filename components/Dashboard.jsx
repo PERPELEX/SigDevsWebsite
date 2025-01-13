@@ -25,7 +25,7 @@ export default function Dashboard() {
       </div>
 
       {/* left */}
-      <Image src="/dash.png" width={400} height={400} />
+      <Image src="/dash.png" width={400} height={400} alt="dasboardPic" />
     </div>
   );
 }

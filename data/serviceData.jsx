@@ -1,5 +1,3 @@
-import Heading from "@/components/Heading";
-
 // serviceData.js
 export const services = [
   {

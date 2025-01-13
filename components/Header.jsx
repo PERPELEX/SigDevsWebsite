@@ -34,7 +34,7 @@ export default function Header() {
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, [router.events]);
+  }, [router]);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);

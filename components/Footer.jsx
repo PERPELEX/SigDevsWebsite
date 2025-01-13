@@ -18,7 +18,7 @@ export default function Footer() {
       setPath(router.asPath);
       console.log("olllo " + path);
     }
-  }, [router.asPath]);
+  }, [router]);
 
   return (
     <footer className="bg-[#111] text-white pt-8 noto shadow-2xl">
