@@ -58,7 +58,7 @@ const svgs = {
 
 export default function Reason({ icon, name, text }) {
   return (
-    <div className="flex flex-col justify-start items-center">
+    <div className=" flex flex-col justify-start items-center">
       {svgs[icon]}
       <h3 className="mt-4 mb-2 text-xl font-semibold">{name}</h3>
       <p className="text-sm font-light text-center">{text}</p>

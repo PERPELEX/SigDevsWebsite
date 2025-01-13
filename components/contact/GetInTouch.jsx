@@ -24,9 +24,11 @@ const contactMethods = [
 
 export default function GetInTouch() {
   return (
-    <div className="flex flex-col justify-center items-center gap-20">
-      <h3 className="text-6xl font-medium">Or Get In Touch</h3>
-      <div className="w-full flex flex-row justify-between">
+    <div className="flex flex-col justify-center gap-10 p-4 md:p-8">
+      <h3 className="text-4xl md:text-6xl font-medium text-center">
+        Or Get In Touch
+      </h3>
+      <div className="grid grid-cols-2 md:flex md:flex-row md:justify-between md:items-center gap-8">
         {contactMethods.map((method, index) => (
           <ContactMethod
             key={index}
@@ -34,6 +36,7 @@ export default function GetInTouch() {
             title={method.title}
             link={method.link}
             linkText={method.linkText}
+            className={index === 2 ? "col-span-2" : ""}
           />
         ))}
       </div>

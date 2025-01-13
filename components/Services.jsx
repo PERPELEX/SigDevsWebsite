@@ -43,9 +43,12 @@ const ServicesData = [
 
 export default function Services() {
   return (
-    <div id="services" className="w-[100%] h-auto bg-graphite ">
-      <Heading text="Our Services" className="text-white text-center mb-24" />
-      <div className="flex flex-col  gap-32">
+    <div id="services" className="w-full h-auto bg-graphite p-4 md:p-8">
+      <Heading
+        text="Our Services"
+        className="text-white text-center mb-12 md:mb-24"
+      />
+      <div className="flex flex-col gap-16 md:gap-32">
         {ServicesData.map((serviceData, index) => (
           <Service
             key={index}

@@ -15,8 +15,6 @@ const ContactForm = ({ className }) => {
   // Web3Forms API key - replace with your actual key
   const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
 
-  // Log the environment variable to check if it's being accessed correctly
-
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -81,11 +79,11 @@ const ContactForm = ({ className }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`bg-[#fff] shadow-2xl rounded-2xl p-12 flex flex-col justify-between gap-4 ${className}`}
+      className={`bg-[#fff] shadow-2xl rounded-2xl p-8 md:p-12 flex flex-col justify-between gap-4 ${className}`}
     >
-      <span className="w-full flex flex-row gap-4">
+      <div className="w-full flex flex-col md:flex-row gap-4">
         <input
-          className="w-[50%] border-2 border-gray-300 rounded-sm py-2 px-3 text-gray-700 hover:border-night-blue transition-all ease-in-out duration-200 focus:outline-none focus:shadow-outline focus:border-night-blue"
+          className="w-full md:w-[50%] border-2 border-gray-300 rounded-sm py-2 px-3 text-gray-700 hover:border-night-blue transition-all ease-in-out duration-200 focus:outline-none focus:shadow-outline focus:border-night-blue"
           id="firstName"
           name="firstName"
           type="text"
@@ -95,7 +93,7 @@ const ContactForm = ({ className }) => {
           required
         />
         <input
-          className="w-[50%] border-2 border-gray-300 rounded-sm py-2 px-3 text-gray-700 hover:border-night-blue transition-all ease-in-out duration-200 focus:outline-none focus:shadow-outline focus:border-night-blue"
+          className="w-full md:w-[50%] border-2 border-gray-300 rounded-sm py-2 px-3 text-gray-700 hover:border-night-blue transition-all ease-in-out duration-200 focus:outline-none focus:shadow-outline focus:border-night-blue"
           id="lastName"
           name="lastName"
           type="text"
@@ -104,11 +102,11 @@ const ContactForm = ({ className }) => {
           onChange={handleInputChange}
           required
         />
-      </span>
+      </div>
 
-      <span className="w-full flex flex-row gap-4">
+      <div className="w-full flex flex-col md:flex-row gap-4">
         <input
-          className="w-[50%] border-2 border-gray-300 rounded-sm py-2 px-3 text-gray-700 hover:border-night-blue transition-all ease-in-out duration-200 focus:outline-none focus:shadow-outline focus:border-night-blue"
+          className="w-full md:w-[50%] border-2 border-gray-300 rounded-sm py-2 px-3 text-gray-700 hover:border-night-blue transition-all ease-in-out duration-200 focus:outline-none focus:shadow-outline focus:border-night-blue"
           id="phoneNumber"
           name="phoneNumber"
           type="tel"
@@ -118,7 +116,7 @@ const ContactForm = ({ className }) => {
           required
         />
         <input
-          className="w-[50%] border-2 border-gray-300 rounded-sm py-2 px-3 text-gray-700 hover:border-night-blue transition-all ease-in-out duration-200 focus:outline-none focus:shadow-outline focus:border-night-blue"
+          className="w-full md:w-[50%] border-2 border-gray-300 rounded-sm py-2 px-3 text-gray-700 hover:border-night-blue transition-all ease-in-out duration-200 focus:outline-none focus:shadow-outline focus:border-night-blue"
           id="email"
           name="email"
           type="email"
@@ -127,11 +125,11 @@ const ContactForm = ({ className }) => {
           onChange={handleInputChange}
           required
         />
-      </span>
+      </div>
 
       <div className="w-full flex flex-col">
         <input
-          className="w-[100%] border-2 border-gray-300 rounded-sm py-2 px-3 text-gray-700 hover:border-night-blue transition-all ease-in-out duration-200 focus:outline-none focus:shadow-outline focus:border-night-blue"
+          className="w-full border-2 border-gray-300 rounded-sm py-2 px-3 text-gray-700 hover:border-night-blue transition-all ease-in-out duration-200 focus:outline-none focus:shadow-outline focus:border-night-blue"
           id="title"
           name="title"
           type="text"
@@ -167,11 +165,11 @@ const ContactForm = ({ className }) => {
         </div>
       )}
 
-      <div className="flex flex-row justify-end">
+      <div className="flex flex-row justify-center md:justify-end">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="font-medium px-4 py-2 border-2 bg-night-blue border-night-blue text-white rounded-xl hover:bg-white hover:text-night-blue hover:border-night-blue transition-all ease-in-out duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="font-medium w-full md:w-auto px-4 py-2 border-2 bg-night-blue border-night-blue text-white rounded-xl hover:bg-white hover:text-night-blue hover:border-night-blue transition-all ease-in-out duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? "Sending..." : "Submit"}
         </button>

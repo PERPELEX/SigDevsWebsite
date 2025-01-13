@@ -3,7 +3,7 @@ import Point from "./Point";
 
 export default function ServiceDescription({ description }) {
   return (
-    <div className=" flex flex-col gap-32">
+    <div className="flex flex-col gap-16 md:gap-32">
       {description &&
         description.map((point, index) => (
           <Point

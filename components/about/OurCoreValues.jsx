@@ -31,8 +31,8 @@ const coreValues = [
 export default function OurCoreValues() {
   return (
     <div className="flex flex-col justify-center items-center gap-12">
-      <h2 className="text-6xl font-medium">Our Core Values</h2>
-      <div className="flex flex-row justify-between items-center">
+      <h2 className="text-4xl md:text-6xl font-medium">Our Core Values</h2>
+      <div className="grid grid-cols-2 md:flex md:flex-row md:justify-between md:items-center">
         {coreValues.map((value, index) => (
           <Value
             key={index}

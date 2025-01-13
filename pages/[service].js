@@ -29,17 +29,21 @@ export default function ServiceDetails() {
   }, [router]);
 
   if (!serviceData) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        Loading...
+      </div>
+    );
   }
 
   return (
-    <main className="w-[100%] z-20 overflow-hidden">
+    <main className="w-full z-20 overflow-hidden">
       <ServiceHeading
         title={serviceData?.heading?.title}
         heading={serviceData?.heading?.heading}
         text={serviceData?.heading?.text}
       />
-      <Wrapper className="bg-graphite noto flex flex-col gap-y-24">
+      <Wrapper className="bg-graphite noto flex flex-col gap-y-12 md:gap-y-24 p-4 md:p-8">
         <ServiceDescription description={serviceData?.description} />
       </Wrapper>
     </main>

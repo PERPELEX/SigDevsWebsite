@@ -110,7 +110,7 @@ export default function Header() {
 
   return (
     <header
-      className={`bg-[#111] text-white noto flex flex-col px-20 py-6 shadow-2xl z-50 transition-all duration-900 ease-in-out ${
+      className={`bg-[#111] text-white noto flex flex-col px-10 md:px-20 py-6 shadow-2xl z-50 transition-all duration-900 ease-in-out ${
         isDropdownOpen || isDropdownOpen2 ? "max-h-[1000px]" : "max-h-[90px]"
       }`}
     >
